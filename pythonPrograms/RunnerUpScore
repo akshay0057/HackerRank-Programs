@@ -1,0 +1,13 @@
+n = int(input())
+arr = map(int, input().split())
+max1 = arr[0]
+max2 = arr[0]
+for i in range(n):
+    if max1 < arr[i]:
+        max1 = arr[i]
+    if max2 > arr[i]:
+        max2 = arr[i]
+for i in range(n):
+    if max2 < arr[i] <max1:
+        max2 = arr[i]
+print(max2)

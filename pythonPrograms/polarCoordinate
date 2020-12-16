@@ -1,0 +1,8 @@
+import cmath
+import math
+
+complexNumber = complex(input())
+x = complexNumber.real
+y = complexNumber.imag
+print(math.sqrt( (x**2)+(y**2) ))
+print(cmath.phase(complexNumber))
